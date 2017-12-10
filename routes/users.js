@@ -18,7 +18,7 @@ router.get('/test', function(req, res, next) {
 
 router.get('/pdf', (req, res, next) => {
   const doc = new PDFDocument()
-  let filename = "test"
+  var filename = "test"
   // Stripping special characters
   filename = encodeURIComponent(filename) + '.pdf'
   // Setting response to 'attachment' (download).
